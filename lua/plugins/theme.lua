@@ -128,11 +128,47 @@ return {
       dark_mode = true,
     },
   },
+  {
+    "shaunsingh/nord.nvim",
+    name = "nord",
+    config = function()
+      vim.g.nord_disable_background = true
+      vim.g.nord_bold = false
+      vim.g.nord_cursorline_transparent = true
+    end,
+  },
+
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require("github-theme").setup({
+        options = {
+          transparent = true,
+        },
+      })
+
+      -- vim.cmd("colorscheme github_dark_tritanopia")
+    end,
+  },
+
+  {
+    "ramojus/mellifluous.nvim",
+    name = "mellifluous",
+    config = function()
+      -- require("mellifluous").setup({
+      --   transparent_background = {
+      --     enabled = true,
+      --   },
+      -- })
+    end,
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "mellifluous",
     },
   },
 }
