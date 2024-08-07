@@ -156,12 +156,13 @@ return {
   {
     "ramojus/mellifluous.nvim",
     name = "mellifluous",
+    branch = "fix/transparent-bg",
     config = function()
-      -- require("mellifluous").setup({
-      --   transparent_background = {
-      --     enabled = true,
-      --   },
-      -- })
+      require("mellifluous").setup({
+        transparent_background = {
+          enabled = true,
+        },
+      })
     end,
   },
 
