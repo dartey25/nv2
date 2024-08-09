@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.filetype.add({ extension = { templ = "templ" } })
 vim.opt.guicursor = "i:block"
+vim.g.zig_fmt_autosave = 0

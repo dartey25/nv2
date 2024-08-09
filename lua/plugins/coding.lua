@@ -135,6 +135,10 @@ return {
       return {}
     end,
   },
+
+  {
+    "ziglang/zig.vim",
+  },
   -- then: setup supertab in cmp
   {
     "hrsh7th/nvim-cmp",
