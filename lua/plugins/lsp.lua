@@ -7,4 +7,7 @@ return {
       },
     },
   },
+  {
+    "joerdav/templ.vim",
+  },
 }
